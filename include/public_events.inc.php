@@ -84,7 +84,7 @@ function oauth_begin_register()
       }
       else
       {
-        require_once(OAUTH_PATH . 'include/hybridauth/Hybrid/Auth.php');
+        require_once(OAUTH_PATH . 'include/hybridauth/hybridauth/Hybrid/Auth.php');
         
         $hybridauth = new Hybrid_Auth($hybridauth_conf);
         $adapter = $hybridauth->authenticate($provider);
@@ -242,7 +242,7 @@ function oauth_begin_profile()
     }
     else
     {
-      require_once(OAUTH_PATH . 'include/hybridauth/Hybrid/Auth.php');
+      require_once(OAUTH_PATH . 'include/hybridauth/hybridauth/Hybrid/Auth.php');
       
       $hybridauth = new Hybrid_Auth($hybridauth_conf);
       $adapter = $hybridauth->getAdapter($provider);
@@ -286,7 +286,7 @@ function oauth_logout($user_id)
   
   if ($provider != 'Persona')
   {
-    require_once(OAUTH_PATH . 'include/hybridauth/Hybrid/Auth.php');
+    require_once(OAUTH_PATH . 'include/hybridauth/hybridauth/Hybrid/Auth.php');
     
     try {
       $hybridauth = new Hybrid_Auth($hybridauth_conf);

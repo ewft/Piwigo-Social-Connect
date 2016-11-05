@@ -24,7 +24,7 @@ if (basename(dirname(__FILE__)) != 'oAuth')
 define('OAUTH_PATH' ,  PHPWG_PLUGINS_PATH . 'oAuth/');
 define('OAUTH_ADMIN',  get_root_url() . 'admin.php?page=plugin-oAuth');
 define('OAUTH_CONFIG', PWG_LOCAL_DIR . 'config/hybridauth.inc.php');
-define('OAUTH_PUBLIC', get_absolute_root_url() . ltrim(OAUTH_PATH,'./') . 'include/hybridauth/');
+define('OAUTH_PUBLIC', get_absolute_root_url() . ltrim(OAUTH_PATH,'./') . 'include/hybridauth/hybridauth/');
 
 include_once(OAUTH_PATH . 'include/functions.inc.php');
 

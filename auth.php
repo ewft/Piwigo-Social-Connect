@@ -7,7 +7,7 @@ global $hybridauth_conf;
 // OpenID is always enabled
 $hybridauth_conf['providers']['OpenID']['enabled'] = true;
 
-require_once(OAUTH_PATH . 'include/hybridauth/Hybrid/Auth.php');
+require_once(OAUTH_PATH . 'include/hybridauth/hybridauth/Hybrid/Auth.php');
 
 $provider = @$_GET['provider'];
 
